@@ -422,6 +422,7 @@ body a:hover {
 body a:focus {
   outline: 0; }
 
+
 body ul {
   list-style-type: none;
   margin: 0; }
@@ -2572,7 +2573,7 @@ small.text {
         border: 0; }
       .navbar.style-12 .nav-search .form-group .form-control {
         color: #44424a;
-        background-color: #1a191e;
+        background-color: #E8F4FF;
         border-radius: 5px;
         max-width: 280px;
         border: 0;
@@ -3720,7 +3721,7 @@ header.style-14 {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      background-color: #fff;
+      background-color: #E8F4FF;
       border-radius: 30px;
       border: 1px solid #9992;
       -webkit-box-shadow: 0 0 20px #0001;
@@ -3729,7 +3730,7 @@ header.style-14 {
       margin-top: 60px; }
       header.style-14 .info .form-group .form-control {
         border: 0;
-        background: transparent; }
+      }
       header.style-14 .info .form-group .btn {
         -ms-flex-negative: 0;
         flex-shrink: 0; }
@@ -6032,7 +6033,6 @@ header.style-15 {
           object-fit: cover; }
       .testimonials.style-1 .content .info .client_card .inf_content .rate_stars {
         margin-bottom: 5px; }
-        text-align: center;
 
         .testimonials.style-1 .content .info .client_card .inf_content .rate_stars i {
           color: #ffb400;
@@ -6259,8 +6259,130 @@ header.style-15 {
       width: 110%;
       max-height: unset;
       max-width: unset;
-
     }
+    .testimonials.style-5 .content {
+      border-bottom: 1px solid #9993;
+    }
+    
+    .testimonials.style-5 .content .numbs {
+      display: flex;
+    }
+    
+    .testimonials.style-5 .content .numbs .num-card .icon {
+      height: 55px;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+    
+    .testimonials.style-5 .content .numbs .num-card h2 {
+      color: var(--color-blue4);
+    }
+    
+    .testimonials.style-5 .content .numbs .num-card p {
+      font-size: 11px;
+      color: #666;
+      margin-top: 5px;
+    }
+    
+    .testimonials.style-5 .content .numbs .num-card:not(:last-of-type) {
+      padding-right: 50px;
+      margin-right: 50px;
+      border-right: 1px solid #9993;
+    }
+    
+    .testimonials.style-5 .content .play-btn {
+      display: flex;
+      align-items: center;
+    }
+    
+    .testimonials.style-5 .content .play-btn .icon {
+      width: 42px;
+      height: 42px;
+      border: 1px solid #5842bc99;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+    
+    .testimonials.style-5 .content .play-btn .icon i {
+      color: var(--color-blue4);
+      font-size: 16px;
+    }
+    
+    .testimonials.style-5 .content .stars {
+      font-size: 10px;
+      color: #fdb900;
+    }
+    
+    .testimonials.style-5 .content .testi-cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    .testimonials.style-5 .content .testi-cards .client_card {
+      position: relative;
+      z-index: 10;
+      border-radius: 15px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      box-shadow: -4.104px 11.276px 38px 0px rgba(45, 42, 61, 0.1);
+      margin-bottom: 20px;
+    }
+    
+    .testimonials.style-5 .content .testi-cards .client_card:last-child {
+      margin-bottom: 0;
+    }
+    
+    .testimonials.style-5 .content .testi-cards .client_card .user_img {
+      margin-right: 25px;
+      flex-shrink: 0;
+    }
+    
+    .testimonials.style-5 .content .testi-cards .client_card .user_img  {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+
+    
+    .testimonials.style-5 .content .testi-cards .client_card .inf_content .rate_stars i {
+      color: #ffb400;
+      font-size: 10px;
+    }
+    
+    .testimonials.style-5 .content .testi-cards .client_card .inf_content h6 {
+      font-weight: bold;
+      font-size: 12px;
+    }
+    
+    .testimonials.style-5 .content .testi-cards .client_card .inf_content p {
+      font-size: 10px;
+      color: #000;
+    }
+    
+
+    .test1 {
+      position: absolute;
+      left: 160px;
+    }
+    .test2 {
+      position: absolute;
+      left: 100px;
+    } 
+    .test3 {
+      position: absolute;
+      left: 50px;
+    } 
+    .test4 {
+      position: absolute;
+      left: 110px;
+    }  
 .testi-card.style-5 {
   display: block;
   padding: 40px 30px;
@@ -6340,10 +6462,10 @@ header.style-15 {
       -o-object-fit: contain;
       object-fit: contain;
       z-index: 0; }
-
 .testimonials.style-7 {
   position: relative;
-  background-color: #f0eff5; }
+  background: #E8F4FF;
+}
   .testimonials.style-7 .container {
     position: relative;
     z-index: 10; }
@@ -6354,10 +6476,7 @@ header.style-15 {
     top: 0;
     width: 100%;
     height: 80%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(transparent));
-    background: -webkit-linear-gradient(top, #fff, transparent);
-    background: -o-linear-gradient(top, #fff, transparent);
-    background: linear-gradient(to bottom, #fff, transparent);
+    background: linear-gradient(to top, #E8F4FF 70%, white 10%);
     pointer-events: none; }
   .testimonials.style-7 .img_back {
     position: absolute;
@@ -6395,26 +6514,39 @@ header.style-15 {
       justify-content: center;
       margin-top: 40px; }
       .testimonials.style-7 .testi-card .author .inf p {
-        color: #946ed6; }
+        text-align: center;
+        color: white; 
+      }
       .testimonials.style-7 .testi-card .author .inf h6 {
         font-size: 18px;
+        color: white;
+        text-align: center;
         font-weight: bold; }
   .testimonials.style-7 .get-qoute-banner {
-    background-color: #fff;
+    background-color: #1E8DEE;
     border-radius: 10px;
     padding: 0 50px;
     margin-top: 130px; }
     .testimonials.style-7 .get-qoute-banner .info p {
+      
+      text-align: center;
       color: #666;
       margin-bottom: 5px; }
+      
     .testimonials.style-7 .get-qoute-banner .info h6 {
+      
+      text-align: center;
       font-size: 24px;
       font-weight: bold; }
     .testimonials.style-7 .get-qoute-banner .img {
-      text-align: center; }
-      .testimonials.style-7 .get-qoute-banner .img img {
-        width: 200px;
-        margin-top: -30px; }
+
+      text-align: center; 
+    }
+      
+      .testimonials.style-7 .get-qoute-banner .img  {
+        margin-top: -30px;
+
+      }
 
 .testimonials.style-8 .testi-card .info {
   background-color: #fff;
@@ -9739,7 +9871,6 @@ header.style-15 {
 /* --------------- contact style-6 --------------- */
 .contact.style-6 .content {
   position: relative;
-  border-top: 10px solid var(--color-blue6);
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
   padding: 100px 15px; }
@@ -9750,9 +9881,7 @@ header.style-15 {
     top: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(45deg, transparent, #def1fa, transparent, #e8e8f3, transparent);
-    background: -o-linear-gradient(45deg, transparent, #def1fa, transparent, #e8e8f3, transparent);
-    background: linear-gradient(45deg, transparent, #def1fa, transparent, #e8e8f3, transparent);
+
     background-size: 400% 400%;
     -webkit-animation: gradient 20s linear infinite;
     animation: gradient 20s linear infinite;
@@ -9778,13 +9907,11 @@ header.style-15 {
 
 .contact.style-6 .form-group .form-control,
 .contact.style-6 .form-group .form-select {
-  border: 1px solid #9994;
-  border-radius: 30px;
   min-height: 50px;
   font-size: 12px;
   padding: 10px 25px; }
   .contact.style-6 .form-group .form-control:focus,
-  .contact.style-6 .form-group .form-select:focus {
+  .contact.style-6 .form-group .form-select:focus  textarea:focus {
     border-color: var(--color-blue6);
     -webkit-box-shadow: none;
     box-shadow: none; }
@@ -10693,7 +10820,7 @@ footer.style-8 {
     footer.style-8 .content .links-content .foot-subscribe .form-group .form-control {
       padding: 15px 15px 15px 40px;
       border-radius: 50px;
-      background-color: #fff;
+      background-color: #E8F4FF;
       border: 0; }
       footer.style-8 .content .links-content .foot-subscribe .form-group .form-control::-webkit-input-placeholder {
         color: #9999; }
@@ -10763,11 +10890,11 @@ footer.style-9 {
 
 footer.style-10 {
   position: relative;
-  background-color: #000;
+  background-color: #075CB0;
   color: #fff; }
   footer.style-10 .info-card {
     padding-top: 30px;
-    border-top: 1px solid #fff2; }
+     }
     footer.style-10 .info-card h5 {
       font-size: 20px;
       font-weight: 500; }
@@ -11057,7 +11184,6 @@ footer.style-15 {
       height: 50px;
       line-height: 50px;
       text-align: center;
-      border: 1px solid #fff5;
       color: #fff;
       border-radius: 50%;
       -webkit-margin-start: 10px;
@@ -11359,9 +11485,6 @@ footer.style-15 {
 .about-page .contact .content {
   border-top: 10px solid var(--color-blue5); }
 
-.about-page .contact.style-6 .form-group .form-control:focus, .about-page .contact.style-6 .form-group .form-select:focus {
-  border-color: var(--color-blue5); }
-
 .culture.style-5 .culture-card {
   position: relative;
   border-radius: 20px;
@@ -11422,8 +11545,6 @@ footer.style-15 {
 			[ * contact page Style ] 
 ================================================================*/
 /* --------------- contact page styles --------------- */
-.contact-page.style-5 .contact.style-6 .form-group .form-control:focus, .contact-page.style-5 .contact.style-6 .form-group .form-select:focus {
-  border-color: var(--color-blue5); }
 
 .contact-page.style-5 .map iframe {
   width: 100%;
@@ -11765,7 +11886,24 @@ footer.style-15 {
     top: 0;
     width: 1px;
     height: 100%;
-    background-color: #9994; }
+    background-color: red; }
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+  }
+
+  .page-item {
+    width: 40px;
+    height: 5px;
+    background-color: #ccc; /* Color gris para las líneas */
+    margin: 0 5px;
+  }
+
+  .active {
+    background-color: #FFC700; /* Color rojo para la línea activa */
+  }
 
 .blog-page.style-5 .related-postes-slider .swiper-slide-active::after {
   position: absolute;
@@ -12833,7 +12971,7 @@ footer.style-15 {
       left: 15px;
       color: #fff; }
     .careers-page.style-5 .career-form .form .form-group .form-control {
-      background-color: #fff1;
+      background-color: #E8F4FF;
       border-radius: 5px;
       min-height: 50px;
       border: 0;
@@ -12862,7 +13000,7 @@ footer.style-15 {
       .careers-page.style-5 .career-form .form .form-group.upload-card .form-control {
         position: relative;
         color: #fff3;
-        background-color: #0002;
+        background-color: #E8F4FF;
         padding: 12px; }
       .careers-page.style-5 .career-form .form .form-group.upload-card .upload_input {
         position: absolute;
@@ -13006,7 +13144,7 @@ footer.style-15 {
         left: 15px;
         color: #fff; }
       .career-details-page.style-5 .career-form .form .form-group .form-control {
-        background-color: #fff1;
+        background-color: #E8F4FF;
         border-radius: 5px;
         min-height: 50px;
         border: 0;
@@ -13035,7 +13173,7 @@ footer.style-15 {
         .career-details-page.style-5 .career-form .form .form-group.upload-card .form-control {
           position: relative;
           color: #fff3;
-          background-color: #0002;
+          background-color: #E8F4FF;
           padding: 12px; }
         .career-details-page.style-5 .career-form .form .form-group.upload-card .upload_input {
           position: absolute;
@@ -13330,7 +13468,7 @@ footer.style-15 {
     top: 0;
     width: 100%;
     height: 400px;
-    background-color: #f6f8fb; }
+    background-color: #E8F4FF; }
   .services-details-page.style-5 .contact.style-5 .contact-form {
     position: relative;
     z-index: 10;
@@ -13345,7 +13483,7 @@ footer.style-15 {
       .services-details-page.style-5 .contact.style-5 .contact-form .form-group .form-control {
         border: 0;
         border-radius: 5px;
-        background-color: #f6f8fb;
+        background-color: #E8F4FF;
         min-height: 50px;
         padding: 12px 15px 12px 40px; }
       .services-details-page.style-5 .contact.style-5 .contact-form .form-group .icon {
